@@ -1,0 +1,89 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f6f8fa;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #fff;
+  padding: 16px 32px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  display: flex;
+  gap: 16px;
+}
+nav a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: #1e293b;
+}
+
+.upload-page, .view-page {
+  max-width: 420px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(80,80,180,0.08);
+  padding: 32px 24px;
+}
+.upload-page h2, .view-page h2 {
+  margin-top: 0;
+  color: #4f46e5;
+  font-size: 1.6rem;
+}
+.upload-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.upload-page input[type="file"] {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 8px;
+}
+.upload-page textarea {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px;
+  min-height: 80px;
+  resize: vertical;
+  font-size: 1rem;
+}
+.upload-page button {
+  background: linear-gradient(90deg, #6366f1, #818cf8);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.upload-page button:hover {
+  background: linear-gradient(90deg, #818cf8, #6366f1);
+}
+.view-page .post {
+  background: #f1f5f9;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(80,80,180,0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.view-page .post img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.view-page .post p {
+  margin: 0;
+  color: #334155;
+  font-size: 1.1rem;
+}
